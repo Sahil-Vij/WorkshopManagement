@@ -59,7 +59,13 @@ function Homescreen() {
       console.log(error);
     }
   }
+  const sortedEvents=events.sort((a, b) => {
+    const dateA = moment(a.Date, "DD-MM-YYYY").toDate();
+    const dateB = moment(b.Date, "DD-MM-YYYY").toDate();
+    return dateA - dateB;
+  });
 
+  console.log("sortedEvents",sortedEvents);
   return (
     <div className="container">
       {/* <div className="row mt-5 bs justify-content-center">
@@ -92,7 +98,7 @@ function Homescreen() {
         {loading ? (
           <Loader />
         ) : (
-          events.map((event) => {
+          sortedEvents.map((event) => {
             return (
               <div className="col-md-9 mt-2">
                 <Event event={event} fromdate={fromdate} todate={todate} />

@@ -112,7 +112,7 @@ function Bookingscreen() {
               <h1>{event.name}</h1>
               <img src={event.imageurls[0]} className="bigimg" />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 fox">
               <div>
                 <b>
                   <h1>Booking Details</h1>

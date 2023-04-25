@@ -85,3 +85,16 @@ h2{
 .ant-picker-input input{
   border:none !important;
 }
+@media (max-width: 768px) {
+  .bigimg {
+    width: 100%;
+    height: auto;
+    margin-top:12px;
+  }
+  .fox{
+    margin-top:20px;
+  }
+  .docs{
+    margin-top:20px;
+  }
+}

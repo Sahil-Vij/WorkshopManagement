@@ -28,13 +28,13 @@ function Event({ event, fromdate, todate ,searchKey}) {
       <div className="col-md-4">
         <img src={event.imageurls[0]} className="smallimg" />
       </div>
-      <div className="col-md-7">
+      <div className="col-md-7 docs" >
         <h1>{event.name}</h1>
         <b>
           {" "}
           {/* <p>Seat Availability : {event.SeatAvailability}</p> */}
           <p style={{paddingTop:'8px'}}>Date : {event.Date}</p>
-          <p>Phone Number : {event.phonenumber}</p>
+          {/* <p>Phone Number : {event.phonenumber}</p> */}
           <p>Type : {event.type}</p>
         </b>
         <div style={{ float: "right" }}>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 function Navbar() {
   const user = JSON.parse(localStorage.getItem("currentUser"));
@@ -22,7 +23,7 @@ function Navbar() {
             type="button"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon"><MenuOutlinedIcon style={{color:'white'}}/></span>
           </button>
           <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarNav">
             <ul className="navbar-nav mr-50">
